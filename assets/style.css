@@ -412,3 +412,5 @@ footer{background:#03050f;color:var(--ink);border-top:1px solid var(--line)}
 @media (hover:hover){.nav ul a:not(.btn):hover{color:#ff2bd6;text-shadow:0 0 14px rgba(255,43,214,.6);transition:color .12s ease,text-shadow .12s ease}}
 .nav ul a:not(.btn):focus-visible,.nav ul a.tap{color:#ff2bd6;text-shadow:0 0 14px rgba(255,43,214,.6);transition:color .12s ease,text-shadow .12s ease}
 .nav a[data-nav]:hover,.nav a[aria-current]{text-decoration:none}
+/* v2 mark is a transparent PNG; no blend mode needed */
+.logo .mark{mix-blend-mode:normal;filter:drop-shadow(0 0 8px rgba(139,92,246,.45))}
