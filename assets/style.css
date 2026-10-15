@@ -421,3 +421,23 @@ footer{background:#03050f;color:var(--ink);border-top:1px solid var(--line)}
 .cta-line{margin:-8px 0 14px;font:600 20px/1.3 var(--body);color:#fff}
 .cta-line span{color:#ff2bd6;text-shadow:0 0 14px rgba(255,43,214,.5)}
 @media (max-width:640px){.cta-line{font-size:18px}}
+/* results page (2026-10-15) */
+.rec-h{margin:48px 0 16px;font-size:clamp(24px,3vw,32px)}
+.days{display:grid;gap:10px;margin-top:14px}
+.days details{padding:0;overflow:hidden}
+.days summary{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:14px 18px;font:600 15px/1 var(--mono);list-style:none}
+.days summary::-webkit-details-marker{display:none}
+.days summary::after{content:"+";color:var(--cyan);font-size:18px;grid-column:4}
+.days details[open] summary::after{content:"−"}
+.days summary:hover{color:#ff2bd6}
+.days .tbl{border-top:1px solid var(--line)}
+table.picks td{white-space:normal;vertical-align:top}
+table.picks td.game{min-width:180px;color:var(--muted)}
+table.picks td.pk{min-width:150px;font-weight:500;color:var(--ink)}
+table.picks tbody tr:nth-child(odd){background:rgba(56,214,255,.04)}
+table.picks tbody tr:nth-child(4n+1),table.picks tbody tr:nth-child(4n+2){background:none}
+table.picks tbody tr:nth-child(odd){background:rgba(56,214,255,.04)}
+.days .empty{margin:0;padding:16px 18px}
+.printout tbody tr:nth-child(4n+1),.printout tbody tr:nth-child(4n+2){background:none}
+.printout tbody tr:nth-child(odd){background:rgba(56,214,255,.04)}
+@media (max-width:640px){table.picks{min-width:640px}.days summary{gap:14px;font-size:14px}}
