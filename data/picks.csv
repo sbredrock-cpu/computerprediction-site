@@ -1,0 +1,108 @@
+date,time,sport,game,pick,price,result,pl
+2026-10-14,4:30 PM,NCAAF,Kennesaw State Owls @ Missouri State Bears,R.Collins Pass TDs Over 1.5,+194,L,-$100
+2026-10-14,4:30 PM,NCAAF,Kennesaw State Owls @ Missouri State Bears,I.Myers Rec Yds Under 70.5,-114,L,-$100
+2026-10-14,5:00 PM,NCAAF,Western Kentucky Hilltoppers @ Sam Houston State Bearkats,B.Glenn Rush Att Under 14.5,+100,L,-$100
+2026-10-14,5:00 PM,NCAAF,Western Kentucky Hilltoppers @ Sam Houston State Bearkats,Q.Humphreys Recs Under 1.5,+130,W,+$130
+2026-10-14,5:00 PM,NCAAF,Western Kentucky Hilltoppers @ Sam Houston State Bearkats,Q.Humphreys Rec Yds Under 21.5,-115,W,+$87
+2026-10-13,3:00 PM,NHL,New Jersey Devils @ Detroit Red Wings,A.Mantha SOG Under 1.5,-105,W,+$95
+2026-10-13,3:45 PM,NHL,Washington Capitals @ Carolina Hurricanes,J.Slavin Blk Under 1.5,+120,L,-$100
+2026-10-13,4:00 PM,NCAAF,Delaware Fightin Blue Hens @ Middle Tennessee Blue Raiders,J.Silver Rush Att Over 10.5,+100,L,-$100
+2026-10-13,4:00 PM,NCAAF,Delaware Fightin Blue Hens @ Middle Tennessee Blue Raiders,R.Gagliano Rush Yds Under 10.5,-112,L,-$100
+2026-10-13,4:15 PM,NHL,Tampa Bay Lightning @ New York Rangers,E.Cernak SOG Under 1.5,-175,W,+$57
+2026-10-13,4:15 PM,NHL,Tampa Bay Lightning @ New York Rangers,V.Hedman SOG Under 1.5,-170,W,+$59
+2026-10-13,4:15 PM,NHL,Tampa Bay Lightning @ New York Rangers,Z.Girgensons SOG Under 1.5,-134,L,-$100
+2026-10-13,4:30 PM,NHL,St. Louis Blues @ Ottawa Senators,S.Halliday SOG Under 1.5,+125,W,+$125
+2026-10-13,4:30 PM,NHL,St. Louis Blues @ Ottawa Senators,A.Jiricek Ast Under 0.5,-218,W,+$46
+2026-10-13,5:00 PM,NCAAF,Florida International Panthers @ Jacksonville State Gamecocks,J.Kohl Rush Att Under 5.5,-120,W,+$83
+2026-10-13,5:15 PM,NHL,Minnesota Wild @ Winnipeg Jets,K.Kaprizov SOG Under 3.5,-138,W,+$72
+2026-10-13,7:30 PM,NHL,Edmonton Oilers @ Los Angeles Kings,D.Doughty SOG Under 1.5,-150,L,-$100
+2026-10-13,7:30 PM,NHL,Edmonton Oilers @ Los Angeles Kings,S.Laughton SOG Under 1.5,+105,W,+$105
+2026-10-13,8:00 PM,NHL,Boston Bruins @ San Jose Sharks,I.Stenberg SOG Over 1.5,-105,W,+$95
+2026-10-12,4:00 PM,NHL,Ottawa Senators @ New Jersey Devils,W.Foegele SOG Under 1.5,-114,W,+$88
+2026-10-12,5:15 PM,NFL,Buffalo Bills @ Los Angeles Rams,S.Bell Rec Yds Under 14.5,-108,W,+$93
+2026-10-11,6:30 AM,NFL,Philadelphia Eagles @ Jacksonville Jaguars,Under 41.75,-110,W,+$91
+2026-10-11,6:30 AM,NFL,Philadelphia Eagles @ Jacksonville Jaguars,J.Mundt Recs Under 0.5,-130,W,+$77
+2026-10-11,6:35 AM,NFL,Philadelphia Eagles @ Jacksonville Jaguars,Under 42,-105,W,+$95
+2026-10-11,10:00 AM,NFL,Chicago Bears @ Green Bay Packers,Under 44.5,-113,W,+$88
+2026-10-11,10:00 AM,NFL,Chicago Bears @ Green Bay Packers,Under 47,-111,W,+$90
+2026-10-11,10:00 AM,NFL,Cincinnati Bengals @ Miami Dolphins,Under 43.5,-105,L,-$100
+2026-10-11,10:00 AM,NFL,Cleveland Browns @ New York Jets,Under 39.5,-109,W,+$92
+2026-10-11,10:00 AM,NFL,Houston Texans @ Tennessee Titans,Houston Texans -7,-110,W,+$91
+2026-10-11,10:00 AM,NFL,Indianapolis Colts @ Pittsburgh Steelers,Under 43.5,-110,L,-$100
+2026-10-11,10:00 AM,NFL,Minnesota Vikings @ New Orleans Saints,T.Felton Recs Under 1.5,-145,L,-$100
+2026-10-11,10:00 AM,NFL,New York Giants @ Washington Commanders,Under 41.5,-107,L,-$100
+2026-10-11,10:05 AM,NFL,Chicago Bears @ Green Bay Packers,Under 47,-102,W,+$98
+2026-10-11,10:05 AM,NFL,Cleveland Browns @ New York Jets,Under 38,-104,W,+$96
+2026-10-11,10:05 AM,NFL,Indianapolis Colts @ Pittsburgh Steelers,Under 41.75,+100,L,-$100
+2026-10-11,10:05 AM,NFL,New York Giants @ Washington Commanders,Under 41.5,-108,L,-$100
+2026-10-11,1:05 PM,NFL,Denver Broncos @ Los Angeles Chargers,R.Harvey Rush Att Over 5.5,+100,L,-$100
+2026-10-11,1:25 PM,NFL,Detroit Lions @ Arizona Cardinals,J.Brissett Rush Att Over 2.5,+110,L,-$100
+2026-10-11,1:25 PM,NFL,San Francisco 49ers @ Seattle Seahawks,Under 47,-107,L,-$100
+2026-10-10,9:00 AM,NCAAF,Arizona Wildcats @ West Virginia Mountaineers,N.Fifita Rush Att Under 9.5,-115,W,+$87
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,A.Colandrea Pass Comp Over 18.5,+100,W,+$100
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,J.Hoover Rush Att Under 3.5,+120,L,-$100
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,N.Hunter Recs Under 2.5,+105,L,-$100
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,A.Colandrea Pass Att Over 29.5,-110,W,+$91
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,A.Colandrea Rush Att Under 9.5,-115,L,-$100
+2026-10-10,9:00 AM,NCAAF,Indiana Hoosiers @ Nebraska Cornhuskers,L.Beebe Rush Att Over 14.5,-110,L,-$100
+2026-10-10,9:00 AM,NCAAF,North Carolina Tar Heels @ Pittsburgh Panthers,T.Kekahuna Rec Yds Under 20.5,-112,W,+$89
+2026-10-10,9:00 AM,NCAAF,Texas A&M Aggies @ Missouri Tigers,A.Simmons Pass Att Over 29.5,-120,L,-$100
+2026-10-10,9:00 AM,NCAAF,Texas A&M Aggies @ Missouri Tigers,M.Reed Pass Att Over 27.5,-110,W,+$91
+2026-10-10,9:00 AM,NCAAF,Texas A&M Aggies @ Missouri Tigers,M.Reed Rush Att Under 10.5,-140,W,+$71
+2026-10-10,9:00 AM,NCAAF,UCF Knights @ Oklahoma State Cowboys,K.Jenkins Rush Att Under 7.5,+115,L,-$100
+2026-10-10,9:00 AM,NCAAF,UCF Knights @ Oklahoma State Cowboys,C.Hawkins Recs Under 3.5,-145,W,+$69
+2026-10-10,9:00 AM,NCAAF,UCF Knights @ Oklahoma State Cowboys,K.Jenkins Pass Att Under 30.5,-115,L,-$100
+2026-10-10,9:00 AM,NCAAF,Wake Forest Demon Deacons @ North Carolina State Wolfpack,C.Bailey Pass Yds Under 266.5,-112,W,+$89
+2026-10-10,9:45 AM,NCAAF,South Carolina Gamecocks @ Florida Gators,J.Baugh Rush Att Over 19.5,-130,L,-$100
+2026-10-10,9:45 AM,NCAAF,South Carolina Gamecocks @ Florida Gators,L.Sellers Pass Comp Over 18.5,-125,W,+$80
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,A.Mendoza Pass Att Over 28.5,-120,W,+$83
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,A.Mendoza Pass Comp Over 17.5,-120,W,+$83
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,J.Richardson Recs Under 2.5,-180,L,-$100
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,W.Eget Pass Att Over 22.5,-120,W,+$83
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,W.Eget Pass Comp Over 13.5,-115,W,+$87
+2026-10-10,12:30 PM,NCAAF,Duke Blue Devils @ Georgia Tech Yellow Jackets,W.Eget Pass Yds Over 158.5,-114,W,+$88
+2026-10-10,12:30 PM,NCAAF,Houston Cougars @ Kansas State Wildcats,A.Johnson Pass Att Over 31.5,-110,L,-$100
+2026-10-10,12:30 PM,NCAAF,Houston Cougars @ Kansas State Wildcats,C.Weigman Pass Att Over 27.5,-115,W,+$87
+2026-10-10,12:30 PM,NCAAF,Illinois Fighting Illini @ Michigan State Spartans,A.Laughery Rush Att Over 14.5,-110,W,+$91
+2026-10-10,12:30 PM,NCAAF,Illinois Fighting Illini @ Michigan State Spartans,J.Patterson Rush Att Over 16.5,-130,W,+$77
+2026-10-10,12:30 PM,NCAAF,Illinois Fighting Illini @ Michigan State Spartans,K.Houser Rush Yds Over 10.5,-115,W,+$87
+2026-10-10,12:30 PM,NCAAF,Ole Miss Rebels @ Vanderbilt Commodores,J.Curtis Pass Comp Over 18.5,+105,W,+$105
+2026-10-10,12:30 PM,NCAAF,Ole Miss Rebels @ Vanderbilt Commodores,T.Chambliss Pass Comp Over 21.5,+105,L,-$100
+2026-10-10,12:30 PM,NCAAF,Ole Miss Rebels @ Vanderbilt Commodores,T.Chambliss Pass Att Over 30.5,-115,L,-$100
+2026-10-10,12:30 PM,NCAAF,Stanford Cardinal @ Notre Dame Fighting Irish,D.Warren Pass Yds Over 141.5,-112,W,+$89
+2026-10-10,12:30 PM,NCAAF,Texas Longhorns @ Oklahoma Sooners,A.Manning Rush Att Under 9.5,+100,W,+$100
+2026-10-10,12:30 PM,NCAAF,Texas Longhorns @ Oklahoma Sooners,J.Mateer Pass Comp Over 17.5,+105,W,+$105
+2026-10-10,12:30 PM,NCAAF,Texas Longhorns @ Oklahoma Sooners,J.Mateer Rush Att Under 12.5,+105,W,+$105
+2026-10-10,12:30 PM,NCAAF,UCLA Bruins @ Oregon Ducks,Oregon Ducks -10.5,-108,L,-$100
+2026-10-10,12:30 PM,NCAAF,UCLA Bruins @ Oregon Ducks,M.Hampton Recs Under 3.5,-112,W,+$89
+2026-10-10,12:30 PM,NCAAF,UCLA Bruins @ Oregon Ducks,N.Iamaleava Rush Att Under 11.5,-135,W,+$74
+2026-10-10,12:30 PM,NCAAF,UCLA Bruins @ Oregon Ducks,W.Knight Rush Att Under 13.5,-115,L,-$100
+2026-10-10,12:30 PM,NCAAF,Virginia Tech Hokies @ California Golden Bears,A.Greene Recs Under 2.5,+130,W,+$130
+2026-10-10,12:30 PM,NCAAF,Virginia Tech Hokies @ California Golden Bears,A.Greene Rec Yds Under 41.5,-115,L,-$100
+2026-10-10,12:30 PM,NCAAF,Virginia Tech Hokies @ California Golden Bears,M.Hawkins Rush Att Over 8.5,-120,W,+$83
+2026-10-10,12:30 PM,NCAAF,Virginia Tech Hokies @ California Golden Bears,M.Hawkins Rush Yds Over 38.5,-112,W,+$89
+2026-10-10,1:15 PM,NCAAF,Maryland Terrapins @ Ohio State Buckeyes,B.Jackson Rush Att Over 14.5,+100,W,+$100
+2026-10-10,1:15 PM,NCAAF,Maryland Terrapins @ Ohio State Buckeyes,J.Jackson Rush Att Over 10.5,+100,W,+$100
+2026-10-10,4:30 PM,NCAAF,Georgia Bulldogs @ Alabama Crimson Tide,K.Russell Rush Att Under 8.5,+110,L,-$100
+2026-10-10,4:30 PM,NCAAF,Georgia Bulldogs @ Alabama Crimson Tide,K.Russell Pass Att Over 27.5,-130,W,+$77
+2026-10-10,4:30 PM,NCAAF,Georgia Bulldogs @ Alabama Crimson Tide,K.Russell Pass Comp Over 18.5,-105,L,-$100
+2026-10-10,4:30 PM,NCAAF,Syracuse Orange @ Virginia Cavaliers,T.Hill Rush Yds Over 63.5,+102,W,+$102
+2026-10-10,4:30 PM,NCAAF,USC Trojans @ Penn State Nittany Lions,J.Maiava Pass Comp Over 19.5,-115,W,+$87
+2026-10-10,4:30 PM,NCAAF,USC Trojans @ Penn State Nittany Lions,R.Becht Pass Att Over 30.5,-105,W,+$95
+2026-10-10,4:30 PM,NCAAF,USC Trojans @ Penn State Nittany Lions,R.Becht Pass Comp Over 18.5,-115,W,+$87
+2026-10-10,5:00 PM,NCAAF,Kansas Jayhawks @ Utah Utes,I.Marshall Pass Att Over 25.5,-115,W,+$87
+2026-10-10,5:00 PM,NCAAF,Kansas Jayhawks @ Utah Utes,I.Marshall Rush Att Under 11.5,-115,W,+$87
+2026-10-10,5:00 PM,NCAAF,Kansas Jayhawks @ Utah Utes,N.Cox Rec Yds Under 30.5,-115,L,-$100
+2026-10-09,6:00 PM,NCAAF,Iowa Hawkeyes @ Washington Huskies,E.James Recs Under 1.5,+130,W,+$130
+2026-10-09,6:00 PM,NCAAF,Iowa Hawkeyes @ Washington Huskies,K.Moulton Rush Att Over 16.5,+100,W,+$100
+2026-10-09,6:00 PM,NCAAF,Iowa Hawkeyes @ Washington Huskies,B.Naone Rec Yds Under 32.5,-115,W,+$87
+2026-10-09,7:15 PM,NCAAF,Iowa State Cyclones @ BYU Cougars,A.Flora Rush Att Over 15.5,+100,W,+$100
+2026-10-09,7:15 PM,NCAAF,Iowa State Cyclones @ BYU Cougars,J.Raynor Rush Att Under 9.5,-120,W,+$83
+2026-10-08,4:00 PM,NCAAF,Missouri State Bears @ Western Kentucky Hilltoppers,I.Myers Recs Under 4.5,+128,W,+$128
+2026-10-08,4:00 PM,NCAAF,Missouri State Bears @ Western Kentucky Hilltoppers,I.Myers Rec Yds Under 74.5,-115,L,-$100
+2026-10-08,4:00 PM,NCAAF,Missouri State Bears @ Western Kentucky Hilltoppers,M.Miller Recs Under 3.5,-180,L,-$100
+2026-10-08,4:00 PM,NCAAF,Missouri State Bears @ Western Kentucky Hilltoppers,S.Locklear Pass Yds Under 232.5,-112,W,+$89
+2026-10-08,4:00 PM,NCAAF,Sam Houston State Bearkats @ Liberty Flames,D.Copeland Rec Yds Under 28.5,-125,W,+$80
+2026-10-08,4:30 PM,NCAAF,South Florida Bulls @ UTSA Roadrunners,O.McCown Rush Yds Over 6.5,-112,W,+$89
+2026-10-08,5:15 PM,NFL,Tampa Bay Buccaneers @ Dallas Cowboys,Tampa Bay Buccaneers +8,-110,W,+$91
+2026-10-08,5:15 PM,NFL,Tampa Bay Buccaneers @ Dallas Cowboys,K.Gainwell Rush Att Over 3.5,+105,W,+$105

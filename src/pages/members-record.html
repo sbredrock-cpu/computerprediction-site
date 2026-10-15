@@ -1,0 +1,41 @@
+<!-- title: Pick Record · Computer Prediction | description: The Computer Prediction pick record: every pick graded, wins and losses, at a flat $100 per pick. -->
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">The record</div>
+    <h1>Every pick. Every loss.</h1>
+    <p class="lede">Each pick is locked before the game starts and graded after. Losing days stay on the record. Every pick is a flat $100, so the totals show exactly what following every pick would have done.</p>
+  </div>
+  <div class="cred" aria-label="Record since launch">
+    <div class="cred-item"><span>Picks</span><b>{{ALL_PICKS}}</b></div>
+    <div class="cred-item"><span>Win-loss · {{ALL_WINPCT}}</span><b>{{ALL_WL}}</b></div>
+    <div class="cred-item"><span>Net ({{ALL_UNITS}})</span><b class="pos">{{ALL_NET}}</b></div>
+    <div class="cred-item"><span>ROI</span><b class="pos">{{ALL_ROI}}</b></div>
+    <div class="cred-chart">
+      <span>Running profit</span>
+      <svg viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Running profit, {{ALL_NET}} since {{SINCE}}"><polygon class="area" points="{{SPARK_AREA}}"/><polyline class="lineP" points="{{SPARK}}"/></svg>
+    </div>
+  </div>
+  <p class="cred-note">{{SINCE}} to {{THROUGH}} · flat $100 per pick · newest first</p>
+
+  <h2 class="rec-h">Results by day</h2>
+  <div class="printout">
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Day</th><th class="r">Picks</th><th>W-L</th><th class="r">Win %</th><th class="r">Won</th><th class="r">Lost</th><th class="r">Net</th><th class="r">ROI</th><th class="r">Running</th></tr></thead>
+        <tbody>
+{{RECORD_DAYS}}
+        </tbody>
+      </table>
+    </div>
+    <div class="pf"><span>All {{RECORD_NDAYS}} days · {{ALL_PICKS}} picks · {{ALL_WL}} · {{ALL_WINPCT}}</span><span>NET <b class="pos">{{ALL_NET}}</b> · ROI <b class="pos">{{ALL_ROI}}</b></span></div>
+  </div>
+
+  <h2 class="rec-h">Every pick</h2>
+  <p class="note">Tap a day to see each pick, the price it was locked at, and how it graded.</p>
+  <div class="days">
+{{RECORD_PICKS}}
+  </div>
+
+  <p class="note">Updated as each day is graded. A short record is a small sample, and past results don't guarantee future results.</p>
+  <div class="ctas" style="margin-block:24px 64px"><a class="btn primary" href="join.html">Join VIP</a><a class="btn ghost" href="{{FREE_TELEGRAM_URL}}">Get free picks</a></div>
+</div>

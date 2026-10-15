@@ -1,0 +1,168 @@
+<!-- title: Computer Prediction · Data-driven sports picks | description: Our computer models, backtested on over 4.5 years of games. No locks, no guarantees, every result graded. Get free picks by email. -->
+<div class="wrap">
+  <div class="hero-head">
+    <div class="eyebrow">Data-driven sports analytics</div>
+    <h1><span class="h1a">Sports picks built by computers.</span> <em><span class="roi">{{ALL_ROI}}</span> ROI since launch.</em></h1>
+  </div>
+  <div class="hero">
+    <div>
+      <p class="lede">No locks. No guaranteed wins. Anyone can post a five-year record. It proves nothing. We're 100% transparent: we only show what our computer models have selected live, time-stamped before the game and graded after, losing days included. Funny how most so-called experts never post their full results. What are they hiding?</p>
+      <p class="cta-line"><span>100% free predictions.</span> Drop your email here.</p>
+      <form class="gate" id="unlock" action="{{SIGNUP_FORM_ACTION}}" method="post">
+        <label class="sr" for="gate-email">Email address</label>
+        <div class="gate-row">
+          <input id="gate-email" name="email" type="email" required autocomplete="email" placeholder="Enter your best email address">
+          <button class="btn primary" type="submit">Get free picks</button>
+        </div>
+        <p class="fine"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>We hate spam. Zero fluff. Just the data. Unsubscribe anytime. 21+.</p>
+      </form>
+    </div>
+    <div class="hero-side">
+      <div class="term" aria-label="How a pick gets made">
+        <div class="term-bar"><span></span><span></span><span></span><b>cp://models</b></div>
+        <pre><span class="c">&gt;</span> scanning today's board
+<span class="c">&gt;</span> leagues: NFL NCAAF MLB NHL NBA
+<span class="c">&gt;</span> pricing every number
+<span class="c">&gt;</span> testing vs the sharpest market
+<span class="c">&gt;</span> applying backtested filters
+<span class="ok">✓ picks that pass: sent before game time</span>
+<span class="dim">✗ everything else: never sent</span><span class="cursor"></span></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- credibility row -->
+  <div class="cred" aria-label="Track record since launch">
+    <div class="cred-item"><span>All-time ROI</span><b class="pos">{{ALL_ROI}}</b></div>
+    <div class="cred-item"><span>Net units ($100 each)</span><b class="pos">{{ALL_UNITS}}</b></div>
+    <div class="cred-item"><span>Win-loss record</span><b>{{ALL_WL}}</b></div>
+    <div class="cred-item"><span>Winners</span><b>{{ALL_WINPCT}}</b></div>
+    <div class="cred-chart">
+      <span>Running profit</span>
+      <svg viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Running profit, {{ALL_NET}} since {{SINCE}}"><polygon class="area" points="{{SPARK_AREA}}"/><polyline class="lineP" points="{{SPARK}}"/></svg>
+    </div>
+  </div>
+  <p class="cred-note"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Every pick time-stamped before the game and graded after. {{ALL_PICKS}} picks, {{SINCE}} to {{THROUGH}}, flat $100 stakes. A small sample so far, and past results don't guarantee future results.</p>
+</div>
+
+<!-- story -->
+<section class="band" id="why">
+  <div class="wrap split">
+    <div class="sheet" aria-label="Preview of the members' record">
+      <div class="sheet-head"><span>Results by day</span><span class="lock"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Members</span></div>
+      <table aria-hidden="true">
+        <thead><tr><th>Day</th><th>Picks</th><th>W-L</th><th>Net</th><th>Running</th></tr></thead>
+        <tbody class="blur">
+          <tr><td>Wed</td><td>00</td><td>0-0</td><td class="l">−$000</td><td>−$000</td></tr>
+          <tr><td>Thu</td><td>00</td><td>0-0</td><td class="w">+$000</td><td>+$000</td></tr>
+          <tr><td>Fri</td><td>00</td><td>0-0</td><td class="w">+$000</td><td>+$000</td></tr>
+          <tr><td>Sat</td><td>00</td><td>00-00</td><td class="w">+$0,000</td><td>+$0,000</td></tr>
+          <tr><td>Sun</td><td>00</td><td>0-0</td><td class="l">−$00</td><td>+$0,000</td></tr>
+          <tr><td>Mon</td><td>00</td><td>0-0</td><td class="w">+$000</td><td>+$0,000</td></tr>
+        </tbody>
+      </table>
+      <a class="btn primary sheet-cta" href="#unlock">Unlock the full record free</a>
+    </div>
+    <div class="prose">
+      <div class="eyebrow">Why choose us</div>
+      <h2>Tired of the "lock" culture? So are we.</h2>
+      <p>The sports betting industry is flooded with fake handicappers screaming about "10-unit max locks." We don't do that.</p>
+      <p>We treat sports betting like an asset class. Our computer models, filters backtested on over 4.5 years of games, and strict flat staking turn every wager into a calculated position, not a hunch. We lose some days, and those days stay on the record. The systems are built to win over the long run.</p>
+      <p>They were built by a private betting syndicate that bet them with its own money. Sportsbooks limit and ban winners, so there's only so much one group can get down. Now we're sharing the edge with everyday bettors who can't code a model. <a href="story.html">Read the story</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- daily value -->
+<section id="what">
+  <div class="wrap">
+    <div class="eyebrow">What you get</div>
+    <h2>Why your free picks matter</h2>
+    <div class="value">
+      <div>
+        <svg class="vi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <h3>The full picture, not a team name</h3>
+        <p>Every pick comes with the bet, the price to take it at, and the stake. You know exactly what to bet, and when the number is gone.</p>
+      </div>
+      <div>
+        <svg class="vi" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18h3"/></svg>
+        <h3>Sent before game time</h3>
+        <p>Lines move fast. Free picks go to your inbox and VIP picks hit Telegram before the game, time-stamped so the record can't be faked.</p>
+      </div>
+      <div>
+        <svg class="vi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9h-9z"/><path d="M14 2.5A8 8 0 0 1 21.5 10H14z"/></svg>
+        <h3>Unit sizing built in</h3>
+        <p>Every pick carries the same flat stake in units, so one bad day never sinks your bankroll. No "whale plays," no chasing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- comparison -->
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow">The difference</div>
+    <h2>Typical tout vs. Computer Prediction</h2>
+    <div class="tbl">
+      <table class="cmp">
+        <thead><tr><th></th><th>Typical tout</th><th>Computer Prediction</th></tr></thead>
+        <tbody>
+          <tr><td>Where picks come from</td><td>Gut feel and hot takes</td><td>Our computer models, backtested on over 4.5 years of games</td></tr>
+          <tr><td>How many picks</td><td>A "lock" every day, no matter what</td><td>Only what passes the test. Some days, none.</td></tr>
+          <tr><td>The record</td><td>Wins only, losses quietly deleted</td><td>Every pick graded, losing days included</td></tr>
+          <tr><td>Bet sizing</td><td>"Max play," "whale bet," hype</td><td>Flat stakes on every pick</td></tr>
+          <tr><td>Price</td><td>$35 to $500 a month</td><td>Free picks by email. VIP $39 a week or $100 a month.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- VIP -->
+<section id="join">
+  <div class="wrap">
+    <div class="eyebrow">Want every pick?</div>
+    <h2>Join VIP</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Weekly</h3>
+        <div class="amt">$39 <small>/ week</small></div>
+        <ul><li>Every pick the systems find, all sports</li><li>Price and stake on every play</li><li>Private VIP Telegram channel</li><li>Cancel anytime</li></ul>
+        <a class="btn ghost" href="{{CHECKOUT_WEEKLY_URL}}">Try a week</a>
+      </div>
+      <div class="plan main">
+        <div class="tag">Best value</div>
+        <h3>Monthly</h3>
+        <div class="amt">$100 <small>/ month</small></div>
+        <ul><li>Everything in Weekly</li><li>Save about $69 a month compared with paying weekly</li><li>Weekly results recap</li><li>Cancel anytime</li></ul>
+        <a class="btn primary" href="{{CHECKOUT_MONTHLY_URL}}">Join monthly</a>
+      </div>
+    </div>
+    <p class="note">By joining you agree to the <a href="terms.html">terms</a> and <a href="refunds.html">refund policy</a>. 21+ only.</p>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions</div>
+    <h2>Before you sign up</h2>
+    <div class="faq">
+      <details><summary>Are the free picks really free?</summary><p>Yes. Enter your email, confirm it, and you get free picks plus the full record. No card needed.</p></details>
+      <details><summary>Do I need to understand betting models?</summary><p>No. You get the bet, the price and how much to stake. The systems do the rest.</p></details>
+      <details><summary>How many picks a week?</summary><p>It depends on how many edges the systems find. Weekdays usually bring a handful. College football Saturdays bring the full board, 50 or more picks.</p></details>
+      <details><summary>What's a unit?</summary><p>A fixed slice of your bankroll, usually 1 to 2 percent. Our record uses $100 per pick. Sizing every bet the same keeps one bad week from hurting you.</p></details>
+      <details><summary>Do I need Telegram?</summary><p>For VIP, yes. It's free on iPhone, Android and desktop. Free picks come by email.</p></details>
+      <details><summary>Is this legal where I live?</summary><p>We sell information, not bets. Only bet where sports betting is legal and you are of age.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- final CTA -->
+<section class="final-cta">
+  <div class="wrap final">
+    <h2>Start betting with an edge tonight.</h2>
+    <p class="lede">Free picks, in your inbox. No card, no spam.</p>
+    <a class="btn primary big" href="#unlock">Get free picks now</a>
+  </div>
+</section>
+<a class="sticky-cta" href="#unlock">Get free picks</a>

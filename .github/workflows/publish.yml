@@ -1,0 +1,31 @@
+# Builds the site from this branch and publishes the result to `main`, which Hostinger deploys.
+name: Publish site
+on:
+  push:
+    branches: [source]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: publish
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node build.mjs
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: live
+      - name: Copy build into main and push if anything changed
+        run: |
+          find live -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r dist/. live/
+          cd live
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git -c user.name="cp-site-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Publish site from source@${GITHUB_SHA::7}"
+          git push origin main
