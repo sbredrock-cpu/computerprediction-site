@@ -42,3 +42,13 @@
     }, 600);
   }, 4000);
 })();
+
+// Nav links: on touch screens (no hover), flash pink briefly when tapped.
+(function () {
+  document.querySelectorAll('.nav ul a:not(.btn)').forEach(function (a) {
+    a.addEventListener('touchstart', function () {
+      a.classList.add('tap');
+      setTimeout(function () { a.classList.remove('tap'); }, 700);
+    }, { passive: true });
+  });
+})();

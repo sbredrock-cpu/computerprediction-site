@@ -407,3 +407,8 @@ footer{background:#03050f;color:var(--ink);border-top:1px solid var(--line)}
 .sb-foot{padding:0;white-space:nowrap;flex:none}
 @media (max-width:640px){.sb-foot{display:none}.sb-flip,.sb-row{height:48px}.sb-row{grid-template-columns:1fr auto auto auto}}
 @media (prefers-reduced-motion:reduce){.sb-rows{transition:none}}
+/* nav links glow neon pink on hover, fade back to white (steve, 2026-10-15) */
+.nav ul a:not(.btn){color:#fff;transition:color .9s ease,text-shadow .9s ease}
+@media (hover:hover){.nav ul a:not(.btn):hover{color:#ff2bd6;text-shadow:0 0 14px rgba(255,43,214,.6);transition:color .12s ease,text-shadow .12s ease}}
+.nav ul a:not(.btn):focus-visible,.nav ul a.tap{color:#ff2bd6;text-shadow:0 0 14px rgba(255,43,214,.6);transition:color .12s ease,text-shadow .12s ease}
+.nav a[data-nav]:hover,.nav a[aria-current]{text-decoration:none}
