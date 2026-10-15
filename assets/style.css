@@ -414,3 +414,6 @@ footer{background:#03050f;color:var(--ink);border-top:1px solid var(--line)}
 .nav a[data-nav]:hover,.nav a[aria-current]{text-decoration:none}
 /* v2 mark is a transparent PNG; no blend mode needed */
 .logo .mark{mix-blend-mode:normal;filter:drop-shadow(0 0 8px rgba(139,92,246,.45))}
+/* bigger eyebrow over the headline (steve, 2026-10-15) */
+.hero-head .eyebrow{font-size:15px;font-weight:600;letter-spacing:.12em}
+@media (max-width:640px){.hero-head .eyebrow{font-size:13px;letter-spacing:.08em}}
