@@ -126,6 +126,47 @@ function record() {
 }
 Object.assign(SITE, record());
 
+// Public results page: big running-profit chart, record by sport, best/worst day. Pick detail stays on the members page.
+function results() {
+  const days = DAILY.trim().split('\n').slice(1).map((l) => { const [date, w, lo, p, net] = l.split(','); return { date, w: +w, l: +lo, p: +p, net: +net }; });
+  const money = (n) => (n >= 0 ? '+$' : '−$') + Math.abs(n).toLocaleString('en-US');
+  const md = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', timeZone: 'UTC' });
+  // chart
+  let run = 0; const pts = [{ x: 0, y: 0, label: 'Start' }, ...days.map((d, i) => ({ x: i + 1, y: (run += d.net), label: md(d.date) }))];
+  const W = 800, H = 260, L = 64, R = 30, T = 16, B = 34;
+  const lo = Math.min(0, ...pts.map((p) => p.y)), hiRaw = Math.max(...pts.map((p) => p.y));
+  const step = hiRaw > 2000 ? 1000 : 500, hi = Math.ceil(hiRaw / step) * step || step;
+  const X = (x) => L + (x * (W - L - R)) / (pts.length - 1), Y = (y) => T + ((hi - y) * (H - T - B)) / (hi - lo || 1);
+  let grid = '';
+  for (let v = Math.floor(lo / step) * step; v <= hi; v += step) grid += `<line class="g" x1="${L}" x2="${W - R}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"/><text class="ya" x="${L - 10}" y="${(Y(v) + 4).toFixed(1)}">${v < 0 ? '−' : ''}$${Math.abs(v).toLocaleString('en-US')}</text>`;
+  const line = pts.map((p) => `${X(p.x).toFixed(1)},${Y(p.y).toFixed(1)}`).join(' ');
+  const area = `${X(0)},${Y(Math.max(lo, 0)).toFixed(1)} ${line} ${X(pts.length - 1).toFixed(1)},${Y(Math.max(lo, 0)).toFixed(1)}`;
+  const dots = pts.slice(1).map((p) => `<circle cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="4"><title>${p.label}: ${money(p.y)}</title></circle><text class="xa" x="${X(p.x).toFixed(1)}" y="${H - 10}">${p.label}</text>`).join('');
+  const chart = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Running profit by day, ending at ${money(run)}">${grid}<polygon class="area" points="${area}"/><polyline class="lineP" points="${line}"/>${dots}</svg>`;
+  // by sport, from graded picks
+  const csvRows = read('data/picks.csv').trim().split(/\r?\n/); const hdr = csvRows[0].split(',');
+  const split = (l) => { const c = []; let cur = '', q = false; for (const ch of l) { if (ch === '"') q = !q; else if (ch === ',' && !q) { c.push(cur); cur = ''; } else cur += ch; } c.push(cur); return c; };
+  const picks = csvRows.slice(1).map((l) => Object.fromEntries(hdr.map((h, i) => [h, split(l)[i] || ''])));
+  const by = new Map();
+  for (const p of picks) {
+    const t = by.get(p.sport) || { w: 0, l: 0, p: 0, net: 0 }; const r = p.result.toUpperCase();
+    if (r === 'W') t.w++; else if (r === 'L') t.l++; else if (r === 'P') t.p++; else continue;
+    t.net += Number(p.pl.replace(/[$,+\s]/g, '').replace('−', '-')) || 0; by.set(p.sport, t);
+  }
+  const sportRows = [...by].sort((a, b) => (b[1].w + b[1].l) - (a[1].w + a[1].l)).map(([s, t]) => {
+    const n = t.w + t.l + t.p;
+    return `<tr><td>${s}</td><td class="r">${n}</td><td>${t.w}-${t.l}${t.p ? '-' + t.p : ''}</td><td class="r">${Math.round((100 * t.w) / (t.w + t.l || 1))}%</td><td class="r ${t.net >= 0 ? 'w' : 'l'}">${money(Math.round(t.net))}</td><td class="r">${t.net >= 0 ? '+' : '−'}${Math.abs(t.net / n).toFixed(1)}%</td></tr>`;
+  }).join('\n');
+  const best = days.reduce((a, b) => (b.net > a.net ? b : a)), worst = days.reduce((a, b) => (b.net < a.net ? b : a));
+  const green = days.filter((d) => d.net > 0).length;
+  return {
+    RES_CHART: chart, RES_SPORTS: sportRows, RES_SPORT_N: String(picks.length),
+    RES_BEST: `${md(best.date)} · ${best.w}-${best.l} · ${money(best.net)}`, RES_WORST: `${md(worst.date)} · ${worst.w}-${worst.l} · ${money(worst.net)}`,
+    RES_GREEN: `${green} of ${days.length}`,
+  };
+}
+Object.assign(SITE, results());
+
 
 const head = read('src/partials/head.html');
 const header = read('src/partials/header.html');

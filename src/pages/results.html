@@ -1,0 +1,51 @@
+<!-- title: Results · Computer Prediction | description: Every Computer Prediction pick is locked before the game and graded after, losing days included. Live results since launch, flat $100 per pick. -->
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Live results</div>
+    <h1>The record, out in the open.</h1>
+    <p class="lede">Every pick is locked before the game and graded after, at a flat $100 a pick. Losing days stay on the board. These are live results only, nothing backfilled.</p>
+  </div>
+
+  <div class="cred" aria-label="Record since launch">
+    <div class="cred-item"><span>Picks</span><b>{{ALL_PICKS}}</b></div>
+    <div class="cred-item"><span>Win-loss</span><b>{{ALL_WL}}</b></div>
+    <div class="cred-item"><span>Winners</span><b>{{ALL_WINPCT}}</b></div>
+    <div class="cred-item"><span>Net ({{ALL_UNITS}})</span><b class="pos">{{ALL_NET}}</b></div>
+    <div class="cred-item"><span>ROI</span><b class="pos">{{ALL_ROI}}</b></div>
+  </div>
+  <p class="cred-note">{{SINCE}} to {{THROUGH}} · flat $100 per pick · updated as each day is graded</p>
+
+  <div class="res-chart printout">
+    <div class="ph"><span>Running profit</span><span>{{ALL_NET}} since {{SINCE}}</span></div>
+    {{RES_CHART}}
+  </div>
+
+  <div class="res-grid">
+    <div class="printout">
+      <div class="ph"><span>By sport</span><span>{{RES_SPORT_N}} graded picks</span></div>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Sport</th><th class="r">Picks</th><th>W-L</th><th class="r">Win %</th><th class="r">Net</th><th class="r">ROI</th></tr></thead>
+          <tbody>
+{{RES_SPORTS}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="res-facts">
+      <div><span>Winning days</span><b>{{RES_GREEN}}</b></div>
+      <div><span>Best day</span><b class="pos">{{RES_BEST}}</b></div>
+      <div><span>Worst day</span><b class="neg">{{RES_WORST}}</b></div>
+    </div>
+  </div>
+
+  <div class="res-gate">
+    <div>
+      <h2>See every pick.</h2>
+      <p>The full record shows each pick by day: the game, the pick, the price it was locked at, and how it graded. It's free with your email.</p>
+    </div>
+    <a class="btn primary big" href="index.html#unlock">Get the full record free</a>
+  </div>
+
+  <p class="note">Past results don't guarantee future results. A short record is a small sample. 21+. Bet only where it's legal.</p>
+</div>
