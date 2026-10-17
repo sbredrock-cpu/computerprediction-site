@@ -5,7 +5,7 @@ import path from 'node:path';
 const SITE = {
   NAME: 'Computer Prediction',
   // Replace these links before uploading. Search the built pages for "#replace-" to find any you missed.
-  CHECKOUT_WEEKLY_URL: '#replace-weekly-checkout-link',    // $39/week payment link (Telegram payment bot)
+  CHECKOUT_WEEKLY_URL: 'https://whop.com/computerprediction/7-day-pass-43/',    // $39/week (Whop 7-day pass)
   CHECKOUT_MONTHLY_URL: 'https://whop.com/computerprediction/30-day-full-access-pass-46/',  // $100/month (Whop 30-day full access pass)
   SIGNUP_FORM_ACTION: '#replace-signup-form-action',       // form action URL from your email tool's embedded form (double opt-in ON; confirmed redirect -> thank-you.html)
   FREE_TELEGRAM_URL: '#replace-free-telegram-link',        // public Telegram channel
